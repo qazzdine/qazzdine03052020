@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %} qazqaz {% endblock %}
+{% block body %}
+{{ question }}
+
+ <h1>Les Réponses {{ answers|length }}</h1>
+
+
+ <ul>
+     {% for answer in answers %}
+    <li>{{ answer }}</li>
+     {% endfor %}
+ </ul>
+{% endblock %}
